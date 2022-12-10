@@ -4,6 +4,8 @@
 {{title}}
 {%endblock title%}
 {% block content %}
+<div class="container py-5">
+<h1>{{title}}</h1>
 {% for post in posts %}
   <ul>
     <li>
@@ -19,4 +21,5 @@
   {%endif%}
   {% if not forloop.last %}<hr>{% endif %}
 {% endfor %} 
-{% endblock %} 
+{% endblock %}
+</div>
